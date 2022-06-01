@@ -1,0 +1,16 @@
+.top {
+
+  text-align: center;
+  font-family:Georgia, Garamond, serif;
+  color:gold;
+
+}
+
+.fon {
+  text-align: center;
+  font-family: Gothic,serif;
+}
+
+#guests {
+  background-image: linear-gradient(0deg, rgba(65,62,122,1) 0%, rgba(40,73,105,1) 25%, rgba(43,89,107,1) 50%, rgba(40,73,105,1) 75%, rgba(72,62,122,1) 100%);
+}

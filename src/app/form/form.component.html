@@ -1,0 +1,38 @@
+<div class="container container text-start col-12 col-md-5 mt-5">
+
+  <form>
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <input type="text" name="firstName" id="form6Example1" class="form-control" (input)="OnNameIn()" [(ngModel)]="newUser.fName" />
+          <label class="form-label" for="form6Example1">Imie</label>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <input type="text" name="lastName" id="form6Example2" class="form-control" (input)="OnLastIn()" [(ngModel)]="newUser.lName" />
+          <label class="form-label" for="form6Example2">Nazwisko</label>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="email" name="em" id="form6Example5" class="form-control" (input)="OnEmailIn()" [(ngModel)]="newUser.email"/>
+      <label class="form-label" for="form6Example5">Adres e-mail</label>
+    </div>
+
+    <!-- Number input -->
+    <div class="form-outline mb-4">
+      <input type="text" name="nu" id="form6Example6" class="form-control" (input)="OnNumberIn()" [(ngModel)]="newUser.number"/>
+      <label class="form-label" for="form6Example6">Numer telefonu</label>
+    </div>
+
+    <!-- Submit button -->
+    <button id="sub-but" type="submit" class="btn btn-primary btn-block mb-4">Zapisz mnie</button>
+  </form>
+
+</div>

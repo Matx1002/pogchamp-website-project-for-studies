@@ -1,0 +1,15 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
+#center {
+  height: 900px;
+  background-image: url('../../assets/Main_jpg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 30%;
+  background-position-x: 40%;
+  /*background-attachment: fixed;*/
+  text-align: left;
+}
+
+
