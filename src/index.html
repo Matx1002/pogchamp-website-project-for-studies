@@ -5,9 +5,8 @@
   <base href="/">
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
   <script type="text/javascript">
-    var form_loc=null;
-    var button_obj=null;
 
     window.onload=function(){
       var toggleButton = document.getElementsByClassName('toggle-button')[0];
@@ -17,101 +16,6 @@
       });
     };
 
-    function load_form(){
-      form_loc=document.getElementById("flexible");
-      form_loc.innerHTML='<h1 class="top"">KONTAKT</h1> <form action="" method="post"><label class="lab">Imie i Nazwisko</label><br><input class="in" type="text" name="imie" required><br><br><label class="lab">Email</label><br><input class="in" type="email" name="email" required><br><br><label class="lab">Treść</label><br><input class="in" type="text" name="treść" required><br><br><button id="b1"></button></form>';
-      form_loc.style.backgroundImage=" linear-gradient(0deg, rgba(65,62,122,1) 0%, rgba(40,73,105,1) 25%, rgba(43,89,107,1) 50%, rgba(40,73,105,1) 75%, rgba(72,62,122,1) 100%)";
-
-      const h1=document.querySelectorAll(".top");
-      h1.forEach(h1=>{
-        h1.style.textAlign="center";
-        h1.style.fontFamily="Georgia", "Garamond";
-        h1.style.color="gold";
-      });
-
-      const labels=document.querySelectorAll(".lab");
-      labels.forEach(label=>{
-        label.style.color="white";
-        label.style.fontFamily="'Georgia', 'Garamond', Serif";
-      });
-
-      const inputs=document.querySelectorAll(".in");
-      inputs.forEach(inp=>{
-        inp.style.border="0";
-        inp.style.borderRadius="3px";
-      });
-
-      button_obj=document.getElementById("b1");
-      button_obj.style.backgroundColor="darkseagreen";
-      button_obj.style.touchAction="manipulation";
-      button_obj.style.boxSizing="border-box;";
-      button_obj.style.margin="1px";
-      button_obj.style.padding="11px 19px";
-      button_obj.textContent="Wyślij";
-      button_obj.style.textAlign="center";
-      button_obj.style.fontFamily="'Georgia', 'Garamond', Serif";
-      button_obj.style.color="white";
-      button_obj.style.border="0";
-      button_obj.style.borderRadius="4px";
-      window.scrollTo({top: document.getElementById("center").scrollHeight, behavior: "smooth"});
-    };
-    function load_sklep(){
-      form_loc=document.getElementById("flexible");
-      form_loc.innerHTML='<h1 class="top"">KUP BILET</h1>Witajcie, strudzeni wędrowcy! To tu znajduje się cel Waszej podróży! Już za chwilę staniecie przed możliwością zdobycia przepustki pozwalającej na wejście do krainy fantastyki o nazwie Pogchamp.<br><br><h2 style="color:gold; font-family:"Georgia", "Garamond", Serif;">BILET 3-DNIOWY (KARNET)</h2><br><table class="tab"><tr><td><h3 style="color:#524356; font-family:"Georgia", "Garamond", Serif;">Bilet 3-dniowy w cenie 149zł    <button class="but"></button></h3> </td></tr></table><h2 style="color:gold; font-family:"Georgia", "Garamond", Serif;">Bilet jednodniowy</h2><table class="tab"><tr><td><h3 style="color:#524356; font-family:"Georgia", "Garamond", Serif;">Bilet jednodniowy na 24.06.2022 w cenie 79zł    <button class="but"></button></h3> </td></tr></table><br><table class="tab"><tr><td><h3 style="color:#524356; font-family:"Georgia", "Garamond", Serif;">Bilet jednodniowy na 25.06.2022 w cenie 109zł   <button class="but"></button></h3> </td></tr></table><br><table class="tab"><tr><td><h3 style="color:#524356; font-family:"Georgia", "Garamond", Serif;">Bilet jednodniowy na 26.06.2022 w cenie 59zł    <button class="but"></button></h3></td></tr></table><br>'
-      form_loc.style.backgroundImage=" linear-gradient(0deg, rgba(65,62,122,1) 0%, rgba(40,73,105,1) 25%, rgba(43,89,107,1) 50%, rgba(40,73,105,1) 75%, rgba(72,62,122,1) 100%)";
-
-      const h1=document.querySelectorAll(".top");
-      h1.forEach(h1=>{
-        h1.style.textAlign="center";
-        h1.style.fontFamily="Georgia", "Garamond";
-        h1.style.color="gold";
-      });
-
-      const tables=document.querySelectorAll(".tab");
-      tables.forEach(table=>{
-        table.style.backgroundColor="#cabbce";
-        table.style.borderRadius="5px";
-        table.style.margin="auto";
-        table.style.width="95%";
-        table.style.color="#b300b3";
-      });
-
-      const buttons=document.querySelectorAll(".but");
-      buttons.forEach(button=>{
-        button.style.backgroundColor="darkseagreen";
-        button.style.touchAction="manipulation";
-        button.style.boxSizing="border-box;";
-        button.style.margin="1px";
-        button.style.padding="11px 19px";
-        button.textContent="Kup bilet";
-        button.style.textAlign="center";
-        button.style.fontFamily="'Georgia', 'Garamond', Serif";
-        button.style.color="white";
-        button.style.border="0";
-        button.style.borderRadius="4px";
-      });
-      window.scrollTo({top: document.getElementById("center").scrollHeight, behavior: "smooth"});
-    }
-    function load_gos(){
-      form_loc=document.getElementById("flexible");
-      form_loc.innerHTML='<h1 class="top">GOŚCIE</h1> <div class="row"><div class="col-xs-6 col-md-4"><img src="../assets/ninja.png" width="300" height="400"><h2 class="fon">NINJA</h2></div><div class="col-xs-6 col-md-4"><img src="../assets/pokimane.png" width="300" height="400"><h2 class="fon">POKIMANE</h2></div><div class="col-xs-6 col-md-4" ><img src="../assets/pewdiepie.png" width="300" height="400"><h2 class="fon">PEWDIEPIE</h2></div><div class="col-xs-6 col-md-4"><img src="../assets/friz.png" width="300" height="400"><h2 class="fon">FRIZ</h2></div><div class="col-xs-6 col-md-4"><img src="../assets/xayoo.png" width="300" height="400"><h2 class="fon">XAYOO</h2></div><div class="col-xs-6 col-md-4"><img src="../assets/sapkowski.png" width="300" height="400"><h2 class="fon">SAPKOWSKI</h2></div></div>';
-      form_loc.style.backgroundImage=" linear-gradient(0deg, rgba(65,62,122,1) 0%, rgba(40,73,105,1) 25%, rgba(43,89,107,1) 50%, rgba(40,73,105,1) 75%, rgba(72,62,122,1) 100%)";
-
-      const h1=document.querySelectorAll(".top");
-      h1.forEach(h1=>{
-        h1.style.textAlign="center";
-        h1.style.fontFamily="Georgia", "Garamond";
-        h1.style.color="gold";
-      });
-
-      const h2=document.querySelectorAll(".fon");
-      h2.forEach(h2=>{
-        h2.style.textAlign="center";
-        h2.style.fontFamily="Gothic";
-      });
-
-      window.scrollTo({top: document.getElementById("center").scrollHeight, behavior: "smooth"});
-    };
   </script>
 </head>
 <body>

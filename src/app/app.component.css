@@ -1,91 +1,111 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image:linear-gradient(0deg, rgba(65,62,122,1) 0%, rgba(166,88,232,1) 100%);
-    color: white;
-    top:0;
-    position: sticky;
-    font-size: 21px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(0deg, rgba(65, 62, 122, 1) 0%, rgba(166, 88, 232, 1) 100%);
+  color: white;
+  top: 0;
+  position: sticky;
+  font-size: 21px;
 }
-.brand-title{
-    font-size: 1.5rem;
-    margin: .5rem;
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
 }
+
 .navbar-links ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 1em;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(102, 138, 238);
+}
+
+.toggle-button {
+  top: 14px;
+  position: absolute;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33px;
+  height: 24px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 1080px) {
+  .toggle-button {
     display: flex;
-}
-.navbar-links li{
-    list-style: none;
-}
-.navbar-links li a{
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    display: block;
-}
-.navbar-links li:hover{
-    background-color: rgb(102, 138, 238);
-}
-.toggle-button{
-    top: 14px;
-    position: absolute;
-    right: 1rem;
+  }
+
+  .navbar-links {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 33px;
-    height: 24px;
-}
-.toggle-button .bar{
-    height: 3px;
     width: 100%;
-    background-color: white;
-    border-radius: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    position: static;
+  }
 }
-@media (max-width: 1080px){
-    .toggle-button{
-        display: flex;
-    }
-    .navbar-links{
-        display: none;
-        width: 100%;
-    }
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar-links ul{
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar-links li{
-        text-align: center;
-    }
-    .navbar-links li a{
-        padding: .5rem 1rem;
-    }
-    .navbar-links.active{
-        display: flex;
-    }
-    .navbar{
-        position: static;
-    }
+
+.logo img{
+  margin-left: 1em;
 }
 
 #footer {
 
-  background-image: linear-gradient(0deg, rgba(166,88,232,1) 0%, rgba(72,62,122,1) 100%);
+  background-image: linear-gradient(0deg, rgba(166, 88, 232, 1) 0%, rgba(72, 62, 122, 1) 100%);
 
 }
 
 #footer a {
 
-  color: white!important;
+  color: white !important;
 
 }
 
@@ -99,46 +119,45 @@
   color: white;
 }
 
-#stopka
-{
-    background-image: linear-gradient(0deg, rgba(166,88,232,1) 0%, rgba(72,62,122,1) 100%);
-    color: white;
-    font-size: 150%;
-    text-align: center;
-    clear: both;
-    border: 0;
-}
-.a
-{
-    font-size:30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image:linear-gradient(0deg, rgba(65,62,122,1) 0%, rgba(166,88,232,1) 100%);
-    text-align: center;
-    color: white;
-}
-.a:hover
-{
-    color: gold;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image:linear-gradient(0deg, rgba(102,129,203,1) 0%, rgba(203,83,208,1) 100%);
-}
-.b
-{
-    text-align: left;
-    padding: 5px;
-    padding-right: 50px;
-    font-weight: bold;
-    text-align: center;
+#stopka {
+  background-image: linear-gradient(0deg, rgba(166, 88, 232, 1) 0%, rgba(72, 62, 122, 1) 100%);
+  color: white;
+  font-size: 150%;
+  text-align: center;
+  clear: both;
+  border: 0;
 }
 
-.title{
-    color: darkseagreen;
-    font-size: 24px;
+.a {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(0deg, rgba(65, 62, 122, 1) 0%, rgba(166, 88, 232, 1) 100%);
+  text-align: center;
+  color: white;
+}
+
+.a:hover {
+  color: gold;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(0deg, rgba(102, 129, 203, 1) 0%, rgba(203, 83, 208, 1) 100%);
+}
+
+.b {
+  text-align: left;
+  padding: 5px;
+  padding-right: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title {
+  color: darkseagreen;
+  font-size: 24px;
 }
 
