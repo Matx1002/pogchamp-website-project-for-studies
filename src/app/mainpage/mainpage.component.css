@@ -2,7 +2,7 @@
 
 
 #center {
-  height: 800px;
+  height: 850px;
   background-image: url('../../assets/Main_jpg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,13 +23,14 @@
   border:none;
   padding-top:1em;
   padding-bottom:1em;
+  margin-top:8em;
 }
 
 #center h1 {
 
   color:white;
   text-align:center;
-  margin-top: 2em;
+  margin-top: 1em;
   font-size:5em;
   text-shadow: 2px 2px #ff0000;
   font-weight: bold;
