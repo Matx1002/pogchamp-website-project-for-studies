@@ -10,3 +10,7 @@
 .formularz {
   text-align: center!important;
 }
+
+#success{
+  display: none;
+}

@@ -11,6 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 import { GuestsComponent } from './guests/guests.component';
 import { AttractionsComponent } from './attractions/attractions.component';
 import { HeroComponent } from './hero/hero.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,11 @@ import { HeroComponent } from './hero/hero.component';
     ContactComponent,
     GuestsComponent,
     AttractionsComponent,
-    HeroComponent
+    HeroComponent,
+    NavComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,

@@ -15,7 +15,7 @@ export class MainpageComponent implements OnInit {
     document.getElementById("przycisk")?.addEventListener('click', () => {
       let form = document.getElementById("formularzyk");
       if(!form) return;
-      var headerOffset = 100;
+      var headerOffset = 150;
       var elementPosition = form.getBoundingClientRect().top;
       var offsetPosition = elementPosition+window.pageYOffset - headerOffset;
       window.scrollTo({

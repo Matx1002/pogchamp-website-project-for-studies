@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <div class="logo"><a routerLink="/"><img src="assets/cooltext.png" width="50%"></a></div>
+    <a class="toggle-button" href="#">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a routerLink="/" (click)="toggle_nav()">STRONA GŁÓWNA</a></li>
+        <li><a routerLink="/atrakcje" (click)="toggle_nav()">ATRAKCJE</a></li>
+        <li><a routerLink="/goscie" (click)="toggle_nav()">GOŚCIE</a></li>
+        <li><a routerLink="/kontakt" (click)="toggle_nav()">KONTAKT</a></li>
+      </ul>
+    </div>
+  </nav>
