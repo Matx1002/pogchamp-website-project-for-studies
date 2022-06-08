@@ -1,5 +1,5 @@
 
-.goscie {
+.kontenerek {
   padding-bottom: 10rem;
   color: #5a5a5a;
 }
@@ -42,8 +42,17 @@
   }
 }
 
+
+
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
 }
+
+.main-heading {
+  margin-top: 3rem;
+  font-size: 5em;
+
+}
+
